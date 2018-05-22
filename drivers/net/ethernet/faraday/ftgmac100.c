@@ -3240,7 +3240,7 @@ static int ftgmac100_open(struct net_device *netdev)
 #if defined(CONFIG_WEDGE) || defined(CONFIG_WEDGE100) || \
     defined(CONFIG_CMM) || defined (CONFIG_PWNEPTUNE) || \
     defined(CONFIG_MINIPACK) || defined (CONFIG_GALAXY100) || \
-    defined(CONFIG_MINILAKETB)
+    defined(CONFIG_MINILAKETB)  || defined(CONFIG_MAVERICKS)
 	ftgmac100_start_hw(priv, 1000);
 #elif defined(CONFIG_FBTP)
 	ftgmac100_start_hw(priv, 100);
