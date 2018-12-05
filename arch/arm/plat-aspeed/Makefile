@@ -42,6 +42,11 @@ ifeq ($(CONFIG_WEDGE100), y)
   PLATFB = 1
 endif
 
+ifeq ($(CONFIG_MAVERICKS), y)
+  obj-y += dev-uart.o
+  PLATFB = 1
+endif
+
 ifeq ($(CONFIG_YAMP), y)
   obj-y += dev-uart.o
   PLATFB = 1
